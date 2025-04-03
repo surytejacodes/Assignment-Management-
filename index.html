@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Assignment Management System</h1>
+        <div class="input-section">
+            <input type="text" id="assignmentInput" placeholder="Enter Assignment Name">
+            <input type="date" id="deadlineInput">
+            <button onclick="addAssignment()">Add Assignment</button>
+        </div>
+        <ul id="assignmentList"></ul>
+        
+        <h2>Submit Assignment</h2>
+        <div class="submission-section">
+            <input type="file" id="fileInput" onchange="displayFileName()">
+            <button onclick="submitAssignment()">Submit</button>
+            <ul id="submissionList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
